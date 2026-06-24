@@ -1,11 +1,6 @@
-# 内容：Claude 手机端全协议完美堵漏列表（终极版）
-# 数量：16条
+# 内容：Claude 手机端全协议捕获列表（纯净版）
+# 数量：11条
 
-AND,((DOMAIN-SUFFIX,claude.com),(NETWORK,udp)),REJECT
-AND,((DOMAIN-SUFFIX,claude.ai),(NETWORK,udp)),REJECT
-AND,((DOMAIN-SUFFIX,anthropic.com),(NETWORK,udp)),REJECT
-DOMAIN-SUFFIX,time.google.com,REJECT
-DOMAIN-SUFFIX,datadog.pool.ntp.org,REJECT
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
@@ -15,3 +10,5 @@ DOMAIN-SUFFIX,statsig.anthropic.com
 DOMAIN-SUFFIX,servd.host
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,time.google.com
+DOMAIN-SUFFIX,datadog.pool.ntp.org
