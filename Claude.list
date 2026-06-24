@@ -1,7 +1,7 @@
-# 内容：Claude 手机端全协议捕获列表（地毯式封杀版）
-# 数量：17条
+# 内容：Claude 手机端全协议及登录风控完美补丁列表
+# 数量：24条
 
-; ─── 核心服务与 API ───
+; ─── 1. 你提到的克劳德核心与 API ───
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
@@ -9,19 +9,30 @@ DOMAIN-SUFFIX,api.anthropic.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,statsig.anthropic.com
 DOMAIN-SUFFIX,servd.host
-
-; ─── 核心 CDN 加速 ───
 DOMAIN-SUFFIX,cdn.anthropic.com
 
-; ─── 关键内鬼：Sift 设备指纹风控系统（必须统一组别） ───
+; ─── 2. 核心元凶：海外主流账号快捷登录验证通道（全局能上规则不行的根本原因） ───
+; 如果你用 Google 账号登录或触发了谷歌安全防火墙
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+; 如果你用 Apple ID 登录或涉及 iOS/Android 密钥握手
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+
+; ─── 3. 登录时的反欺诈与真人验证（Captcha）暗哨 ───
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,siftscience.com
 
-; ─── 旁路行为日志分析与错误上报 ───
+; ─── 4. 旁路行为日志与数据上报 ───
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,datadoghq.com.com
 
-; ─── NTP 对时暗哨与错误收集 ───
+; ─── 5. 系统对时与网络延迟试探 ───
 DOMAIN-SUFFIX,time.google.com
 DOMAIN-SUFFIX,datadog.pool.ntp.org
