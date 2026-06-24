@@ -5,9 +5,11 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,servd.host
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,cdn.auth0.com
 DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,app.launchdarkly.com
 DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR,209.249.57.0/24,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
