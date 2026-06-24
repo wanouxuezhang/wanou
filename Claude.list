@@ -1,6 +1,7 @@
-# 内容：Claude 手机端全协议捕获列表（最终完美版）
-# 数量：13条
+# 内容：Claude 手机端全协议捕获列表（地毯式封杀版）
+# 数量：17条
 
+; ─── 核心服务与 API ───
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
@@ -8,10 +9,19 @@ DOMAIN-SUFFIX,api.anthropic.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,statsig.anthropic.com
 DOMAIN-SUFFIX,servd.host
+
+; ─── 核心 CDN 加速 ───
+DOMAIN-SUFFIX,cdn.anthropic.com
+
+; ─── 关键内鬼：Sift 设备指纹风控系统（必须统一组别） ───
+DOMAIN-SUFFIX,siftscience.com
+
+; ─── 旁路行为日志分析与错误上报 ───
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,time.google.com
-DOMAIN-SUFFIX,datadog.pool.ntp.org
-; ─── 🎯 新增：拦截并收拢克劳德的 Datadog 行为分析暗哨 ───
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,datadoghq.com.com
+
+; ─── NTP 对时暗哨与错误收集 ───
+DOMAIN-SUFFIX,time.google.com
+DOMAIN-SUFFIX,datadog.pool.ntp.org
