@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,siftscience.com
 DOMAIN-SUFFIX,datadoghq.com
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
+DOMAIN,cdn.usefathom.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR,209.249.57.0/24,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
