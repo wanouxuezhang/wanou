@@ -1,5 +1,5 @@
-# 内容：Claude 手机端全协议捕获列表（纯净版）
-# 数量：11条
+# 内容：Claude 手机端全协议捕获列表（最终完美版）
+# 数量：13条
 
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
@@ -12,3 +12,6 @@ DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,time.google.com
 DOMAIN-SUFFIX,datadog.pool.ntp.org
+; ─── 🎯 新增：拦截并收拢克劳德的 Datadog 行为分析暗哨 ───
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,datadoghq.com.com
