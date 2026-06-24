@@ -1,0 +1,57 @@
+# >>>>> 🤖 独立维护：全球主流 AI 平台全解析（带深度依赖优化版） <<<<<
+
+# ====== OpenAI / ChatGPT / Sora ======
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,ab.chatgpt.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,chatgpt
+
+# ====== Anthropic / Claude ======
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,console.anthropic.com
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+
+# ====== xAI / Grok ======
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-KEYWORD,grok
+PROCESS-NAME,grok
+
+# ====== Google Gemini ======
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# ====== Microsoft Copilot ======
+DOMAIN-SUFFIX,copilot.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,api.githubcopilot.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-KEYWORD,copilot
+
+# ====== Perplexity AI ======
+DOMAIN-SUFFIX,perplexity.ai
+
+# ====== 其他优质绘画/声音/本地 AI 工具 ======
+DOMAIN-SUFFIX,recraft.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,lmsudio.ai
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,udio.com
+PROCESS-NAME,LM Studio
