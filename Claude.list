@@ -1,6 +1,12 @@
-# 内容：Claude 手机端及网页端全网完美补丁大列表
-# 数量：8条
+# 内容：Claude 手机端全协议完美堵漏列表
+# 数量：11条
 
+; 1. 强迫手机 App 放弃 UDP / QUIC 探测，乖乖退回到安全的 TCP 代理
+REJECT,claude.com,udp
+REJECT,claude.ai,udp
+REJECT,api.anthropic.com,udp
+
+; 2. 全域域名精准捕获
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
