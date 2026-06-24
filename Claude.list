@@ -1,0 +1,11 @@
+# 内容：Claude 手机端及网页端全网完美补丁大列表
+# 数量：8条
+
+DOMAIN,claude.com
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,api.anthropic.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,statsig.anthropic.com
+DOMAIN-SUFFIX,servd.host
+DOMAIN-SUFFIX,api.segment.io
