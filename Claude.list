@@ -1,25 +1,22 @@
-# Claude 手机端精准分流规则 v2
+# Claude 手机端精准分流规则 v3
+# 更新时间：2026-06-24
+
+# ── Anthropic 核心域名 ──
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,statsig.anthropic.com
-DOMAIN-SUFFIX,cdn.anthropic.com
-DOMAIN-SUFFIX,api.anthropic.com
 DOMAIN-SUFFIX,servd.host
 
-; ── 新增：控制台与开发者平台 ──
-DOMAIN-SUFFIX,console.anthropic.com
-
-; ── 新增：Auth0 登录验证（Claude App 实际用的登录服务） ──
+# ── Auth0 登录验证 ──
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn.auth0.com
 
-; ── 新增：LaunchDarkly 功能开关（App 启动时必须连接） ──
+# ── LaunchDarkly 功能开关 ──
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,app.launchdarkly.com
 
-; ── 保留的监控/上报 ──
+# ── 行为监控与上报 ──
 DOMAIN-SUFFIX,siftscience.com
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
