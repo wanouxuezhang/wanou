@@ -1,22 +1,13 @@
 # Claude 手机端精准分流规则 v3
-# 更新时间：2026-06-24
-
-# ── Anthropic 核心域名 ──
 DOMAIN,claude.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,servd.host
-
-# ── Auth0 登录验证 ──
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,cdn.auth0.com
-
-# ── LaunchDarkly 功能开关 ──
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,app.launchdarkly.com
-
-# ── 行为监控与上报 ──
 DOMAIN-SUFFIX,siftscience.com
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,sentry.io
