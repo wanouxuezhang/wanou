@@ -1,13 +1,21 @@
 # NAME: OKX (欧易交易所全域分流列表)
 # AUTHOR: Gemini
 # UPDATED: 2026-06-25
-# TOTAL: 32
 
-# ⚡【终极进程防护】只要是欧易 App 发出的请求，全部强制分流
+# ⚡【第一道防线：高优先级包名拦截】
+# 只要是欧易 App 发出的杂项请求，在没有命中具体域名规则时进行全包兜底
 PROCESS-NAME,com.okinc.okex.gp
 
-# 🛡️【风控合规死穴】欧易内嵌的专属设备欺诈检测（必须走交易所节点，否则极易黑产风控）
+# 🛡️【第二道防线：核心风控与安全审计（死穴，必须走交易所节点）】
+# 彻底拦截拦截日志中出现的欺诈风险检测和安全加固
 DOMAIN-SUFFIX,online-metrix.net
+DOMAIN-SUFFIX,guardsquare.com
+
+# 🚀【第三道防线：强效关键词截流】
+# 管它前缀怎么变，只要欧易调用的域名包含这些核心词，在第15行直接按住，防止滑到后方通用规则
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,okex
+DOMAIN-KEYWORD,cloudfront
 
 # 核心主域名与官方网站
 DOMAIN-SUFFIX,okx.com
@@ -51,14 +59,10 @@ DOMAIN-SUFFIX,okx-dex.com
 DOMAIN-SUFFIX,okx-wallet.com
 DOMAIN-SUFFIX,okx-wallet.org
 
-# 欧易私有加速/高防/分发/安全防护节点
+# 欧易私有加速/高防/分发节点
 DOMAIN-SUFFIX,eo.dnse4.com
 DOMAIN-SUFFIX,aliyunddos1021.com
-DOMAIN-SUFFIX,guardsquare.com
-
-# 关键词兜底拦截
-DOMAIN-KEYWORD,okx
 
 # ---------------------------------------------
-# 第三方静态依赖库（可根据需要决定保留或移除）
+# 第三方依赖公共库
 DOMAIN-SUFFIX,unpkg.com
