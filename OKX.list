@@ -2,17 +2,15 @@
 # AUTHOR: Gemini
 # UPDATED: 2026-06-25
 
-# ⚡【第一道防线：高优先级包名拦截】
-# 只要是欧易 App 发出的杂项请求，在没有命中具体域名规则时进行全包兜底
-PROCESS-NAME,com.okinc.okex.gp
-
-# 🛡️【第二道防线：核心风控与安全审计（死穴，必须走交易所节点）】
-# 彻底拦截拦截日志中出现的欺诈风险检测和安全加固
+# 🛡️【专属混淆与风控域名 - 优先级极高】
+DOMAIN-SUFFIX,cnouyi.pizza
+DOMAIN-SUFFIX,coinall.ltd
 DOMAIN-SUFFIX,online-metrix.net
 DOMAIN-SUFFIX,guardsquare.com
 
-# 🚀【第三道防线：强效关键词截流】
-# 管它前缀怎么变，只要欧易调用的域名包含这些核心词，在第15行直接按住，防止滑到后方通用规则
+# 🚀【绝对防漏关键词】
+# 既然后缀防不住随机cloudfront，由于OKX.list在ini排第15位，它的关键词匹配优先级非常高
+# 直接用核心词拦截，把包含这些词的请求在第一关死死扣留在交易所策略组
 DOMAIN-KEYWORD,okx
 DOMAIN-KEYWORD,okex
 DOMAIN-KEYWORD,cloudfront
