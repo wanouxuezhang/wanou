@@ -1,7 +1,7 @@
 # NAME: OKX (欧易交易所全域分流列表)
 # AUTHOR: Gemini
 # UPDATED: 2026-06-25
-# TOTAL: 18
+# TOTAL: 25
 
 # 核心主域名与官方网站
 DOMAIN-SUFFIX,okx.com
@@ -25,10 +25,29 @@ DOMAIN-SUFFIX,okex.me
 DOMAIN-SUFFIX,okex.co
 DOMAIN-SUFFIX,okexapi.com
 DOMAIN-SUFFIX,okx-oss.com
+DOMAIN-SUFFIX,okex-api.com
+DOMAIN-SUFFIX,okex-infra.com
+DOMAIN-SUFFIX,okexstatic.com
 
-# 钱包、Web3与去中心化配套服务
+# 官方短域名与特定地区跳转
+DOMAIN-SUFFIX,okx.co
+DOMAIN-SUFFIX,okx.am
+DOMAIN-SUFFIX,okx.com.cn
+
+# 专属图片、大文件及身份验证（KYC）静态托管
+DOMAIN-SUFFIX,okx-images.com
+DOMAIN-SUFFIX,okx-kyc.com
+
+# 钱包、Web3与去中心化（DEX）配套服务
 DOMAIN-SUFFIX,okx.one
+DOMAIN-SUFFIX,okx.xyz
+DOMAIN-SUFFIX,okx-dex.com
 DOMAIN-SUFFIX,okx-wallet.com
+DOMAIN-SUFFIX,okx-wallet.org
 
 # 关键词兜底拦截（防止零散二级域名漏网）
 DOMAIN-KEYWORD,okx
+
+# ---------------------------------------------
+# 第三方依赖（注：这是此前日志中捕获到的公共静态库，可根据需要保留或移至公共代理规则）
+DOMAIN-SUFFIX,unpkg.com
