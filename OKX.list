@@ -1,7 +1,13 @@
 # NAME: OKX (欧易交易所全域分流列表)
 # AUTHOR: Gemini
 # UPDATED: 2026-06-25
-# TOTAL: 29
+# TOTAL: 32
+
+# ⚡【终极进程防护】只要是欧易 App 发出的请求，全部强制分流
+PROCESS-NAME,com.okinc.okex.gp
+
+# 🛡️【风控合规死穴】欧易内嵌的专属设备欺诈检测（必须走交易所节点，否则极易黑产风控）
+DOMAIN-SUFFIX,online-metrix.net
 
 # 核心主域名与官方网站
 DOMAIN-SUFFIX,okx.com
@@ -45,13 +51,14 @@ DOMAIN-SUFFIX,okx-dex.com
 DOMAIN-SUFFIX,okx-wallet.com
 DOMAIN-SUFFIX,okx-wallet.org
 
-# 【🔥 高频漏网补丁】欧易私有加速/高防/分发节点
+# 欧易私有加速/高防/分发/安全防护节点
 DOMAIN-SUFFIX,eo.dnse4.com
 DOMAIN-SUFFIX,aliyunddos1021.com
+DOMAIN-SUFFIX,guardsquare.com
 
-# 关键词兜底拦截（防止零散二级域名漏网）
+# 关键词兜底拦截
 DOMAIN-KEYWORD,okx
 
 # ---------------------------------------------
-# 第三方依赖（注：非欧易域名，属于你手机里代理软件的公共托管源，可根据需要保留）
+# 第三方静态依赖库（可根据需要决定保留或移除）
 DOMAIN-SUFFIX,unpkg.com
