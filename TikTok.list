@@ -4,6 +4,7 @@
 # 修复日志中漏掉并直连(DIRECT)的视频流域名
 DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokcdn-eu.com
 
 # 官方原本包含的核心域名
 DOMAIN-KEYWORD,tiktokcdn
