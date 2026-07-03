@@ -3,6 +3,10 @@
 # UPDATED: 2026-06-25
 # VERSION: 2.0 (已剔除高误伤规则，补全Web3/合规域名)
 
+# 允许欧易依赖的广告归因与追踪 SDK（防止被广告拦截误伤导致App卡顿/疯狂重试）
+DOMAIN-KEYWORD,appsflyer
+DOMAIN-SUFFIX,appsflyersdk.com
+
 # 🛡️【专属混淆与风控域名 - 优先级极高】
 DOMAIN-SUFFIX,cnouyi.pizza
 DOMAIN-SUFFIX,coinall.ltd
