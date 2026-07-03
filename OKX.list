@@ -1,18 +1,13 @@
 # NAME: OKX (欧易交易所全域分流列表)
 # AUTHOR: Gemini
-# UPDATED: 2026-06-25
-# VERSION: 2.0 (已剔除高误伤规则，补全Web3/合规域名)
+# UPDATED: 2026-07-02
+# 完整纯净版：专门用于 RULE-SET 引用的 .list 文件（不带策略组尾缀）
 
-# 允许欧易依赖的广告归因与追踪 SDK（防止被广告拦截误伤导致App卡顿/疯狂重试）
+# 🛑【防止被广告拦截抢走的第三方归因 SDK】
 DOMAIN-KEYWORD,appsflyer
 DOMAIN-SUFFIX,appsflyersdk.com
 
-# 🛡️【专属混淆与风控域名 - 优先级极高】
-DOMAIN-SUFFIX,cnouyi.pizza
-DOMAIN-SUFFIX,coinall.ltd
-
-# 🚀【绝对防漏关键词】
-# 直接用核心词拦截，把包含这些词的请求在第一关死死扣留在交易所策略组
+# 🚀【绝对防漏核心关键词】
 DOMAIN-KEYWORD,okx
 DOMAIN-KEYWORD,okex
 
@@ -38,7 +33,7 @@ DOMAIN-SUFFIX,okxstatic.cn
 DOMAIN-SUFFIX,okexstatic.com
 DOMAIN-SUFFIX,okx-oss.com
 
-# 🔐【欧易专属 Cloudfront / AWS 加速节点】（精准抓取，替代模糊关键词）
+# 🔐【欧易专属 Cloudfront / AWS 加速节点】
 DOMAIN-SUFFIX,okx-cloudfront.com
 DOMAIN-SUFFIX,okx-aws.com
 
@@ -80,3 +75,7 @@ DOMAIN-SUFFIX,okx-log.com
 # 🚀【欧易私有加速/高防/分发节点】
 DOMAIN-SUFFIX,eo.dnse4.com
 DOMAIN-SUFFIX,aliyunddos1021.com
+
+# 🛡️【专属混淆与风控域名】
+DOMAIN-SUFFIX,cnouyi.pizza
+DOMAIN-SUFFIX,coinall.ltd
