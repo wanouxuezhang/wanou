@@ -33,3 +33,11 @@ DOMAIN-SUFFIX,tiktok.media
 DOMAIN-SUFFIX,tiktokinit.com
 DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,tlow.co
+
+# 5. 补全 geosite:tiktok 与 ads 广告域名
+DOMAIN-KEYWORD,tiktokads
+DOMAIN-SUFFIX,ads-tiktok.com
+DOMAIN-SUFFIX,tiktok-ads.com
+DOMAIN-SUFFIX,tiktokcdn-in.com
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,ttwstatic.com
